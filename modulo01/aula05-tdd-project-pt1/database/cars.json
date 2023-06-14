@@ -1,0 +1,23 @@
+[
+  {
+    "id": "808931d1-3ed0-41ba-a100-1a12651d243c",
+    "name": "Aventador",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "fb5c1a26-ba0b-4f1d-8d4c-9dc7365234b1",
+    "name": "Ranchero",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "e0b342f4-5f97-44c9-85ec-d918a64fa622",
+    "name": "Land Cruiser",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]
