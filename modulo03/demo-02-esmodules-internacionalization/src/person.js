@@ -30,4 +30,19 @@ export default class Person {
         .format(mapDate(this.to)),
     }
   }
+
+  // 1 Bike 10000 2000-01-01 2002-02-02
+  static generateInstanceFromString(text) {
+    const EMPTY_SPACE = ' ';
+    const [id, vehicles, kmTraveled, from, to] = text.split(EMPTY_SPACE);
+    const person = new Person({
+      id,
+      vehicles: vehicles.split(','),
+      kmTraveled,
+      from,
+      to
+    });
+
+    return person;
+  }
 }
