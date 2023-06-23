@@ -1,0 +1,23 @@
+[
+  {
+    "id": "07737c0c-86c5-416a-9af4-2b70b474e750",
+    "name": "Alpine",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "13f007d9-9806-407a-9347-83fd682ff68a",
+    "name": "Ranchero",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "bfaf3794-601c-49a7-9135-86166d44ac45",
+    "name": "Sentra",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]
