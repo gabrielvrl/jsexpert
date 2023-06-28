@@ -5,7 +5,8 @@ import FluentSQLBuilder from '@gabrielvrl/fluentsql';
 
 import database from './database/data.json' assert { type: 'json' };
 
-
-const result = FluentSQLBuilder.for(database).where({ registered: /^(2020|2019)/ }).select(['name']).limit(3).groupCount('name').build();
+// groupBy não existe mais
+// const result = FluentSQLBuilder.for(database).where({ registered: /^(2020|2019)/ }).select(['name']).limit(3).groupCount('name').build();
+const result = FluentSQLBuilder.for(database).where({ registered: /^(2020|2019)/ }).select(['name']).limit(3).countBy('name').build();
 
 console.log({ result })

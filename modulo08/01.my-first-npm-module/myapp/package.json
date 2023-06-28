@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gabrielvrl/fluentsql": "^1.0.0"
+    "@gabrielvrl/fluentsql": "^2.0.0"
   }
 }
