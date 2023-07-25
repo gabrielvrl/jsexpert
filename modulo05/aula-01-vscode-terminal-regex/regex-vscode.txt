@@ -17,7 +17,7 @@ replace {firstName: "$2", lastName: "$1"}
 
 \[(.*?)\]\(([http|https].*?)\)
 
-O [Erick Wendel](https://erickwendel.com) faz palestras e você devia segui-lo lá no [Twitter](http://twitter.com/erickwendel_) ou até no [Instagram](https://instagram.com/erickwendel_)
+O [Erick Wendel](https://gabrielvrl.com) faz palestras e você devia segui-lo lá no [Twitter](http://twitter.com/gabrielvrl_) ou até no [Instagram](https://instagram.com/gabrielvrl_)
 
 Ah e pode pesquisar no [Google](https://google.com) ou
 [Yahoo](https://yahoo.com)

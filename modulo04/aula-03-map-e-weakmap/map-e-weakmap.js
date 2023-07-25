@@ -23,11 +23,11 @@ assert.deepStrictEqual(myMap.get(true)(), 'hello');
 
 // Em Objects a chave só pode ser string ou Symbol (number é coergido a string)
 const onlyReferenceWorks = { id: 1 };
-myMap.set(onlyReferenceWorks, { name: 'ErickWendel' });
+myMap.set(onlyReferenceWorks, { name: 'GabrielVrl' });
 
 // console.log('get', myMap.get(onlyReferenceWorks));
 assert.deepStrictEqual(myMap.get({ id: 1 }), undefined);
-assert.deepStrictEqual(myMap.get(onlyReferenceWorks), { name: 'ErickWendel' });
+assert.deepStrictEqual(myMap.get(onlyReferenceWorks), { name: 'GabrielVrl' });
 
 // utilitários
 // - No Object seria Object.keys({ a: 1 }).length
@@ -36,7 +36,7 @@ assert.deepStrictEqual(myMap.size, 4);
 // para verificar se um item existe no objeto 
 // item.key = se não existir, retorna undefined
 // if() = coerção implicita para boolean e retorna false
-// O jeito certo em Object é ({ name: 'ErickWendel' }).hasOwnProperty('name')
+// O jeito certo em Object é ({ name: 'GabrielVrl' }).hasOwnProperty('name')
 assert.ok(myMap.has(onlyReferenceWorks));
 
 // para remover um item do objeto
