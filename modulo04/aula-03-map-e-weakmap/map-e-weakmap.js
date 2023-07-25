@@ -5,7 +5,7 @@ const myMap = new Map();
 // podem ter qualquer coisa como chave
 myMap
   .set(1, 'one')
-  .set('Erick', { text: 'two' })
+  .set('Gabriel', { text: 'two' })
   .set(true, () => 'hello');
 
 // usando um construtor
@@ -18,7 +18,7 @@ const myMapWithConstructor = new Map([
 // console.log('myMap', myMap);
 // console.log('myMap.get(1)', myMap.get(1));
 assert.deepStrictEqual(myMap.get(1), 'one');
-assert.deepStrictEqual(myMap.get('Erick'), { text: 'two' });
+assert.deepStrictEqual(myMap.get('Gabriel'), { text: 'two' });
 assert.deepStrictEqual(myMap.get(true)(), 'hello');
 
 // Em Objects a chave só pode ser string ou Symbol (number é coergido a string)
@@ -46,7 +46,7 @@ assert.ok(myMap.delete(onlyReferenceWorks));
 
 // Não dá para iterar em Objects diretamente
 // tem que transformar com Object.entries(item)
-assert.deepStrictEqual(JSON.stringify([...myMap]), '[[1,"one"],["Erick",{"text":"two"}],[true,null]]');
+assert.deepStrictEqual(JSON.stringify([...myMap]), '[[1,"one"],["Gabriel",{"text":"two"}],[true,null]]');
 
 // for (const [key, value] of myMap) {
 //   console.log({ key, value });

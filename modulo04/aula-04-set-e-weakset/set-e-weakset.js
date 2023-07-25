@@ -31,7 +31,7 @@ assert.ok(set.has('3'))
 
 // tem nos dois arrays
 const users01 = new Set([
-  'Erick',
+  'Gabriel',
   'Maria',
   'Manoel'
 ]);
@@ -46,7 +46,7 @@ const intersection = new Set([...users01].filter(user => users02.has(user)));
 assert.deepStrictEqual(Array.from(intersection), ['Maria']);
 
 const difference = new Set([...users01].filter(user => !users02.has(user)));
-assert.deepStrictEqual(Array.from(difference), ['Erick', 'Manoel']);
+assert.deepStrictEqual(Array.from(difference), ['Gabriel', 'Manoel']);
 
 // weakSet
 // mesma ideia do weakMap

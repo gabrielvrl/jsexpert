@@ -2,7 +2,7 @@ const rewiremock = require('rewiremock/node');
 const { deepStrictEqual } = require('assert');
 
 // poderia estar em outro arquivo
-const dbData = [ { name: 'Gabriel' }, { name: 'Erick' } ]
+const dbData = [ { name: 'Gabriel' }, { name: 'Gabriel' } ]
 class MockDatabase {
   connect = () => this;
   find = async (query) => dbData;
@@ -13,7 +13,7 @@ rewiremock(() => require('../src/util/database')).with(MockDatabase);
 
 ;(async () => {
   {
-    const expected = [{ name: 'GABRIEL' }, { name: 'ERICK' }];
+    const expected = [{ name: 'GABRIEL' }, { name: 'GABRIEL' }];
     rewiremock.enable();
     const UserFactory = require('../src/factory/userFactory');
     const userFactory = await UserFactory.createInstance();
